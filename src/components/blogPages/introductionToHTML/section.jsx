@@ -187,7 +187,7 @@ function About() {
         <a
           href="https://www.youtube.com/watch?v=PEbsYf6NRa4"
           target="_blank"
-          className={`${theme === "light" ? "text-[#32cd32]" : "text-[aqua]"} hover:underline max-sm:underline text-base`}
+          className={`${theme === "light" ? "text-[#32cd32]" : "text-[aqua]"} hover:underline font-semibold max-sm:underline text-base`}
         >
           Watch my HTML Structure Tutorial on YouTube
         </a>
