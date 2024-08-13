@@ -182,12 +182,12 @@ function About() {
         </p>
       </div>
       <div
-        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
+        className={`mt-[40px]`}
       >
         <a
           href="https://www.youtube.com/watch?v=PEbsYf6NRa4"
           target="_blank"
-          className={`${theme === "light" ? "text-[#32cd32]" : "text-[aqua]"} mt-[40px] hover:underline max-sm:underline text-base`}
+          className={`${theme === "light" ? "text-[#32cd32]" : "text-[aqua]"} hover:underline max-sm:underline text-base`}
         >
           Watch my HTML Structure Tutorial on YouTube
         </a>
