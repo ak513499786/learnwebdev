@@ -78,18 +78,18 @@ function Navbar() {
               <Link
                 onClick={handleClick}
                 className="max-sm:text-[24px]"
-                to={"/about"}
+                to={"/"}
               >
-                About
+                Home
               </Link>
             </li>
             <li>
               <Link
                 onClick={handleClick}
                 className="max-sm:text-[24px]"
-                to={"/projects"}
+                to={"/about"}
               >
-                Projects
+                About
               </Link>
             </li>
             <li>
@@ -101,40 +101,35 @@ function Navbar() {
                 Contact
               </Link>
             </li>
-          </ul>
-          <ul className="flex flex-col gap-[8px]">
-            <p className="text-[20px] font-semibold">My Projects:</p>
             <li>
               <Link
                 onClick={handleClick}
-                className="max-sm:text-[16px] mb-[4px]"
-                to={"/about"}
+                className="max-sm:text-[24px]"
+                to={"/blogs"}
               >
-                Tailwind Project
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={handleClick}
-                className="max-sm:text-[16px] mb-[4px]"
-                to={"/projects"}
-              >
-                Knest Project
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={handleClick}
-                className="max-sm:text-[16px] mb-[4px]"
-                to={"/contact"}
-              >
-                Portfolio Project
+                Blogs
               </Link>
             </li>
           </ul>
           <div className=" mt-[34px]">
             <p className="mb-[12px] font-semibold">Socials:</p>
             <ul className="flex gap-[24px]">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/@learnwebdev-g3c"
+                >
+                  <img
+                    src={
+                      "https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-youtube-circle-512.png"
+                    }
+                    className="rounded-[50%]"
+                    width={30}
+                    height={30}
+                    alt=""
+                  />
+                </a>
+              </li>
               <li>
                 <a target="_blank" href="https://github.com/ak513499786">
                   <img
@@ -169,22 +164,6 @@ function Navbar() {
                   />
                 </a>
               </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.youtube.com/@learnwebdev-g3c"
-                >
-                  <img
-                    src={
-                      "https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-youtube-circle-512.png"
-                    }
-                    className="rounded-[50%]"
-                    width={30}
-                    height={30}
-                    alt=""
-                  />
-                </a>
-              </li>
             </ul>
           </div>
         </nav>
@@ -196,8 +175,8 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link onClick={handleClick} to={"/projects"}>
-                Projects
+              <Link onClick={handleClick} to={"/blogs"}>
+                Blogs
               </Link>
             </li>
             <li>

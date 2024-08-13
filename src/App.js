@@ -2,14 +2,12 @@ import "./App.css";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
-import HomePage from "./pages/homepage";
+import HomePage from "./pages/homepage.jsx";
 import AboutPage from "./pages/aboutpage";
 import ContactPage from "./pages/contactpage";
-import ProjectPage from "./pages/projectpage";
-import Knest from "./pages/KNest";
-import TailwindProject from "./pages/tailwindProject";
+import BlogPage from "./pages/blogpage.jsx";
+import IntroPage from "./pages/intro-to-html.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Portfolio from "./pages/portfolio";
 import { ThemeProvider } from "./context/themeContext";
 
 function App() {
@@ -47,37 +45,19 @@ function App() {
           />
           <Route
             exact
-            path={"/projects"}
+            path={"/blogs"}
             element={
               <>
-                <ProjectPage />
+                <BlogPage />
               </>
             }
           />
           <Route
             exact
-            path={"/projects/tailwind-project"}
+            path={"/blogs/introduction-to-html"}
             element={
               <>
-                <TailwindProject />
-              </>
-            }
-          />
-          <Route
-            exact
-            path={"/projects/knest-project"}
-            element={
-              <>
-                <Knest />
-              </>
-            }
-          />
-          <Route
-            exact
-            path={"/projects/portfolio-project"}
-            element={
-              <>
-                <Portfolio />
+                <IntroPage />
               </>
             }
           />

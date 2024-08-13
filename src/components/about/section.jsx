@@ -26,19 +26,13 @@ function About() {
           </div>
           <div className="flex items-end gap-[12px]">
             <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">
-              DOB:
-            </h1>
-            <p className="text-[24px] leading-[120%] italic">17/02/2001</p>
-          </div>
-          <div className="flex items-end gap-[12px]">
-            <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">
-              Highest Qualification:
+              Qualification:
             </h1>
             <p className="text-[24px] leading-[120%] italic">B.E(CSE)</p>
           </div>
           <div className="flex items-end gap-[12px]">
             <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">
-              Passed out Year:
+              Passed Out Year:
             </h1>
             <p className="text-[24px] leading-[120%] italic">2022</p>
           </div>
@@ -46,7 +40,7 @@ function About() {
             <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">
               Experience:
             </h1>
-            <p className="text-[24px] leading-[120%] italic">1+ Years</p>
+            <p className="text-[24px] leading-[120%] italic">1+ Yrs</p>
           </div>
           <a
             target="_blank"
@@ -56,8 +50,8 @@ function About() {
             <button
               className={`w-full text-[20px] border-[1px] ${
                 theme === "light"
-                  ? "text-[#32cd32] hover:bg-[#32cd32] hover:text-white border-[#32cd32]"
-                  : "text-[aqua] hover:bg-[aqua] border-[aqua] hover:text-black"
+                  ? "text-[#32cd32] max-sm:w-full max-sm:bg-[#32cd32] max-sm:text-white hover:bg-[#32cd32] hover:text-white border-[#32cd32]"
+                  : "text-[aqua] hover:bg-[aqua] max-sm:w-full max-sm:bg-[aqua] max-sm:text-black border-[aqua] hover:text-black"
               } transition-all font-semibold duration-300 mt-[20px] rounded-[7px] h-[45px]`}
             >
               Resume
@@ -70,7 +64,7 @@ function About() {
           theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"
         } flex justify-start`}
       >
-        <p className="mt-[52px] text-[20px] max-sm:text-base w-[1024px]">
+        <p className="mt-[52px] text-[20px] w-[1024px]">
           <span
             className={`${
               theme === "light" ? "text-[#32cd32]" : "text-[aqua]"
@@ -107,7 +101,7 @@ function About() {
           theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"
         } flex justify-end`}
       >
-        <p className="mt-[52px] text-[20px] max-sm:text-base w-[1024px]">
+        <p className="mt-[52px] text-[20px] w-[1024px]">
           {" "}
           My journey into web development began with a deep interest in
           technology and a drive to create impactful solutions. Over the years,
@@ -137,7 +131,7 @@ function About() {
           theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"
         } flex justify-start`}
       >
-        <p className="mt-[52px] text-[20px] max-sm:text-base w-[1024px]">
+        <p className="mt-[52px] text-[20px] w-[1024px]">
           Looking ahead, I’m excited to continue pushing the boundaries of web
           development, learning new technologies, and taking on challenging
           projects. My goal is to keep{" "}

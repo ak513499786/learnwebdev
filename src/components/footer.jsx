@@ -65,68 +65,36 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className="flex max-sm:gap-[32px] max-[500px]:justify-between gap-[52px]">
-        <ul className="flex flex-col gap-[4px]">
-          <li className="font-semibold mb-[4px] text-[20px]">My Projects:</li>
-          <li>
-            <Link
-              className="hover:underline translate-all"
-              onClick={handleClick}
-              to={"/projects/tailwind-project"}
-            >
-              Tailwind Project
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="hover:underline translate-all"
-              onClick={handleClick}
-              to={"/projects/knest-project"}
-            >
-              Knest Project
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="hover:underline translate-all"
-              onClick={handleClick}
-              to={"/projects/portfolio-project"}
-            >
-              Portfolio Project
-            </Link>
-          </li>
-        </ul>
-        <ul className="flex max-[500px]:w-[120px] flex-col gap-[4px]">
-          <li className="font-semibold mb-[4px] text-[20px]">Sitemap:</li>
-          <li>
-            <Link
-              className="hover:underline translate-all"
-              onClick={handleClick}
-              to={"/about"}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="hover:underline translate-all"
-              onClick={handleClick}
-              to={"/projects"}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="hover:underline translate-all"
-              onClick={handleClick}
-              to={"/contact"}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
+      <ul className="flex max-[500px]:w-[120px] flex-col gap-[4px]">
+        <li className="font-semibold mb-[4px] text-[20px]">Sitemap:</li>
+        <li>
+          <Link
+            className="hover:underline translate-all"
+            onClick={handleClick}
+            to={"/about"}
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="hover:underline translate-all"
+            onClick={handleClick}
+            to={"/blogs"}
+          >
+            Blogs
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="hover:underline translate-all"
+            onClick={handleClick}
+            to={"/contact"}
+          >
+            Contact
+          </Link>
+        </li>
+      </ul>
     </footer>
   );
 }
