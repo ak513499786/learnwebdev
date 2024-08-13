@@ -30,7 +30,7 @@ const CopyableCode = ({ code }) => {
         className={`absolute ${
         theme === "light"
           ? "bg-[#32cd32] text-white"
-          : "bg-[aqua] text-black"
+          : "bg-[#2e8b5f] text-black"
       } top-[10px] right-[10px] px-[10px] py-[5px] rounded-[5px] cursor-pointer`}
         onClick={copyCodeToClipboard}
       >

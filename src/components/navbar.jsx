@@ -110,6 +110,15 @@ function Navbar() {
                 Blogs
               </Link>
             </li>
+            <li>
+              <Link
+                onClick={handleClick}
+                className="max-sm:text-[24px]"
+                to={"/projects"}
+              >
+                Projects
+              </Link>
+            </li>
           </ul>
           <div className=" mt-[34px]">
             <p className="mb-[12px] font-semibold">Socials:</p>
@@ -177,6 +186,11 @@ function Navbar() {
             <li>
               <Link onClick={handleClick} to={"/blogs"}>
                 Blogs
+              </Link>
+            </li>
+            <li>
+              <Link onClick={handleClick} to={"/projects"}>
+                Projects
               </Link>
             </li>
             <li>

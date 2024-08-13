@@ -13,8 +13,8 @@ function Blogs() {
     <section
       className={`${
         theme === "light"
-          ? " bg-[#121212] text-[#e0e0e0]"
-          : "bg-[#e5e5e5] text-black"
+          ? "bg-[#fff] text-black"
+          : " bg-[#121212] text-[#e0e0e0]"
       } px-[80px] max-md:px-[40px] max-sm:px-[20px] py-[51px]`}
     >
       <Link
@@ -25,9 +25,9 @@ function Blogs() {
         <div
           className={`${
             theme === "light"
-              ? "bg-white text-black"
-              : "bg-[#121212] text-[#e0e0e0] shadow-[0px_0px_40px_#00000066] hover:shadow-[0px_0px_40px_#000000]"
-          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[12px] py-[20px]`}
+              ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_40px_#00000066]"
+              : "bg-[#2d2d2d] text-[#f8f8f2]"
+          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[21px] py-[12px]`}
         >
           {/* <img src={Blogs1} className="border-[1px]" alt="" /> */}
           <h1 className="text-[20px] font-semibold mt-[12px]">

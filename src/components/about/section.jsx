@@ -51,7 +51,7 @@ function About() {
               className={`w-full text-[20px] border-[1px] ${
                 theme === "light"
                   ? "text-[#32cd32] max-sm:w-full max-sm:bg-[#32cd32] max-sm:text-white hover:bg-[#32cd32] hover:text-white border-[#32cd32]"
-                  : "text-[aqua] hover:bg-[aqua] max-sm:w-full max-sm:bg-[aqua] max-sm:text-black border-[aqua] hover:text-black"
+                  : "text-[#2e8b5f] hover:bg-[#2e8b5f] max-sm:w-full max-sm:bg-[#2e8b5f] max-sm:text-black border-[#2e8b5f] hover:text-black"
               } transition-all font-semibold duration-300 mt-[20px] rounded-[7px] h-[45px]`}
             >
               Resume
@@ -67,7 +67,7 @@ function About() {
         <p className="mt-[52px] text-[20px] w-[1024px]">
           <span
             className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[aqua]"
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
             Hi! I'm Ahmed
@@ -76,7 +76,7 @@ function About() {
           I’m currently a MERN Stack Developer at{" "}
           <span
             className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[aqua]"
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
             {" "}
@@ -86,7 +86,7 @@ function About() {
           using{" "}
           <span
             className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[aqua]"
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
             MongoDB, Express.js, React.js, and Node.js.
@@ -108,7 +108,7 @@ function About() {
           I’ve developed a wide range of projects, mastering the{" "}
           <span
             className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[aqua]"
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
             {" "}
@@ -117,7 +117,7 @@ function About() {
           and exploring tools like{" "}
           <span
             className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[aqua]"
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
             GSAP and Tailwind CSS
@@ -137,7 +137,7 @@ function About() {
           projects. My goal is to keep{" "}
           <span
             className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[aqua]"
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
             growing as a developer

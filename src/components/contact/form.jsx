@@ -51,8 +51,8 @@ function Form() {
     <section
       className={`${
         theme === "light"
-          ? "text-[#e0e0e0] bg-[#121212]"
-          : "text-[#000] bg-[#e5e5e5]"
+          ? "bg-[#fff] text-black"
+          : " bg-[#121212] text-[#e0e0e0]"
       }   px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:pt-[51px] max-lg:pb-[151px] flex max-lg:flex-col max-lg:gap-[52px] max-lg:items-center justify-between py-[101px]`}
     >
       <h1 className="text-[36px] max-lg:text-center capitalize leading-[120%] font-semibold">
@@ -62,8 +62,8 @@ function Form() {
       <form
         className={`w-[560px] max-md:w-full max-xl:w-[480px] relative transition-all duration-300 flex flex-col gap-[20px] ${
           theme === "light"
-            ? "text-black bg-white"
-            : "text-[#e0e0e0] bg-[#121212] shadow-[0px_0px_40px_#00000066] hover:shadow-[0px_0px_40px_#000000]"
+            ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_40px_#00000066]"
+            : "bg-[#2d2d2d] text-[#f8f8f2]"
         } px-[20px] py-[24px] rounded-[13px]`}
         action=""
       >
@@ -100,12 +100,12 @@ function Form() {
                   ? `${
                       theme === "light"
                         ? "border-black"
-                        : "border-white bg-[#121212] placeholder:text-[#e0e0e0]"
+                        : "border-white bg-[#2d2d2d] placeholder:text-[#e0e0e0]"
                     } border-[1px] w-[250px] max-md:w-full max-xl:w-[200px] mt-[6px] pl-[12px] py-[7px] rounded-[7px]`
                   : `${
                       theme === "light"
                         ? "border-[red] placeholder:text-[red]"
-                        : "bg-[#121212] border-[blue] placeholder:text-[blue]"
+                        : "bg-[#2d2d2d] border-[blue] placeholder:text-[blue]"
                     } border-[1px] w-[250px] max-md:w-full max-xl:w-[200px] mt-[6px] pl-[12px] py-[7px] rounded-[7px]`
               }
             />
@@ -142,12 +142,12 @@ function Form() {
                   ? `${
                       theme === "light"
                         ? "border-black"
-                        : "border-white bg-[#121212] placeholder:text-[#e0e0e0]"
+                        : "border-white bg-[#2d2d2d] placeholder:text-[#e0e0e0]"
                     } border-[1px] w-[250px] max-md:w-full max-xl:w-[200px] mt-[6px] pl-[12px] py-[7px] rounded-[7px]`
                   : `${
                       theme === "light"
                         ? "border-[red] placeholder:text-[red]"
-                        : "bg-[#121212] border-[blue] placeholder:text-[blue]"
+                        : "bg-[#2d2d2d] border-[blue] placeholder:text-[blue]"
                     } border-[1px] w-[250px] max-md:w-full max-xl:w-[200px] mt-[6px] pl-[12px] py-[7px] rounded-[7px]`
               }
             />
@@ -186,7 +186,7 @@ function Form() {
                 ? `${
                     theme === "light"
                       ? "border-black"
-                      : "border-white placeholder:text-[#e0e0e0] bg-[#121212] "
+                      : "border-white placeholder:text-[#e0e0e0] bg-[#2d2d2d] "
                   } border-[1px] mt-[6px] pl-[12px] py-[7px] rounded-[7px]`
                 : `${
                     theme === "light"
@@ -206,7 +206,7 @@ function Form() {
             className={`${
               theme === "light"
                 ? "border-black"
-                : "border-white placeholder:text-[#e0e0e0] bg-[#121212] "
+                : "border-white placeholder:text-[#e0e0e0] bg-[#2d2d2d] "
             } border-[1px] mt-[6px] pl-[12px] py-[7px] rounded-[7px]`}
           />
         </div>
@@ -220,7 +220,7 @@ function Form() {
             className={`${
               theme === "light"
                 ? "border-black"
-                : "border-white placeholder:text-[#e0e0e0] bg-[#121212] "
+                : "border-white placeholder:text-[#e0e0e0] bg-[#2d2d2d] "
             } text-[#black] border-black
                  border-[1px] h-[120px] mt-[6px] w-full resize-none pl-[12px] py-[7px] rounded-[7px]`}
           ></textarea>
@@ -230,7 +230,7 @@ function Form() {
           className={`${
             theme === "light"
               ? " border-[#121212] hover:text-[#e0e0e0] text-[#000000] hover:bg-[#121212] bg-[#ffffff]"
-              : "border-[#e0e0e0] hover:text-[#000] text-[#e0e0e0] hover:bg-[#fff] bg-[#121212]"
+              : "border-[#e0e0e0] hover:text-[#e0e0e0] hover:border-[#2d2d2d] text-[#e0e0e0] hover:bg-[#121212] bg-[#2d2d2d]"
           }  border-[1px] transition-all duration-300 py-[12px] px-[35px] rounded-[5px]`}
         >
           Submit
@@ -238,7 +238,9 @@ function Form() {
         {submit && (
           <div
             className={`${
-              theme === "light" ? "text-[#000000] bg-[#ffffff]" : "text-[#fff] bg-[#000]"
+              theme === "light"
+                ? "text-[#000000] bg-[#ffffff]"
+                : "text-[#fff] bg-[#2d2d2d]"
             }  absolute max-lg:left-0 max-lg:bottom-[-100px] max-lg:w-full max-lg:pl-[16px] left-[-220px] bottom-[0px] shadow-[0px_0px_50px_#00000033] h-[80px]  flex items-center rounded-[13px] w-[200px] text-center`}
           >
             Your Form Have been Submitted

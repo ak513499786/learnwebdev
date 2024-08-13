@@ -4,7 +4,7 @@ import ThemeContext from "../../context/themeContext";
 function Hero() {
   const { theme } = useContext(ThemeContext);
   return (
-    <main className="px-[80px] max-md:px-[40px] max-sm:px-[20px] h-[650px] overflow-hidden relative max-[500px]:pt-[200px] pt-[250px]">
+    <main className="px-[80px] max-md:px-[40px] max-sm:px-[20px] h-[650px] overflow-hidden relative max-[500px]:pt-[150px] pt-[250px]">
       <h1
         className={`text-[92px] max-lg:text-[76px] max-md:text-[62px] max-sm:text-[56px] font-semibold fixed z-[-1] ${
           theme === "light" ? "text-white" : "text-[black]"

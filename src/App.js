@@ -9,6 +9,7 @@ import BlogPage from "./pages/blogpage.jsx";
 import IntroPage from "./pages/intro-to-html.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./context/themeContext";
+import ProjectPage from "./pages/project.jsx";
 
 function App() {
   return (
@@ -58,6 +59,15 @@ function App() {
             element={
               <>
                 <IntroPage />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/projects"}
+            element={
+              <>
+                <ProjectPage />
               </>
             }
           />
