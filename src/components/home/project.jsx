@@ -26,7 +26,7 @@ function Project() {
       <div className="flex mt-[52px] max-lg:flex-wrap gap-[32px]">
         <Link
           onClick={handleClick}
-          to={"/Blogs/introduction-to-html"}
+          to={"/blogs/introduction-to-html"}
           className="flex max-lg:flex-wrap gap-[32px]"
         >
           <div
