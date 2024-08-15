@@ -49,7 +49,7 @@ function Footer() {
           <li className="font-semibold mb-[4px] text-[20px]">Contact:</li>
           <li>
             <a
-              href="mailto:hello@paralleledu.com"
+              href="mailto:ahmedkhan.cse010@gmail.com"
               className="hover:underline translate-all"
             >
               Mail
@@ -58,7 +58,7 @@ function Footer() {
           <li>
             <a
               className="hover:underline translate-all"
-              href="tel: +91 9876543210"
+              href="tel: +91 7396822306"
             >
               Phone Number
             </a>
@@ -74,6 +74,15 @@ function Footer() {
             to={"/about"}
           >
             About
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="hover:underline translate-all"
+            onClick={handleClick}
+            to={"/projects"}
+          >
+            Projects
           </Link>
         </li>
         <li>

@@ -15,7 +15,7 @@ function Form() {
   const [lastNameGive, setLastNameGive] = useState(true);
   const [Emailgive, setEmailgive] = useState(true);
   const [submit, setsubmit] = useState(false);
-  const [click, setclick] = useState(false);
+  const [clicked, setclicked] = useState(false);
   const HandleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -45,10 +45,10 @@ function Form() {
       formData.LastName !== "" &&
       formData.Email !== ""
     ) {
-      setclick(true)
+      setclicked(true);
       const response = await axios
         .post(
-          "https://portfolio-backend-xee8.onrender.com//api/sendMailContact",
+          "https://portfolio-backend-xee8.onrender.com/api/sendMailContact",
           formData
         )
         .then((response) => {
@@ -75,7 +75,7 @@ function Form() {
       <form
         className={`w-[560px] max-md:w-full max-xl:w-[480px] relative transition-all duration-300 flex flex-col gap-[20px] ${
           theme === "light"
-            ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_40px_#00000066]"
+            ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_60px_#00000033]"
             : "bg-[#2d2d2d] text-[#f8f8f2]"
         } px-[20px] py-[24px] rounded-[13px]`}
         action=""
@@ -238,17 +238,29 @@ function Form() {
                  border-[1px] h-[120px] mt-[6px] w-full resize-none pl-[12px] py-[7px] rounded-[7px]`}
           ></textarea>
         </div>
-        <button
-          onClick={HandleSubmit}
-          type={click ? 'disable' : 'submit'}
-          className={`${
-            theme === "light"
-              ? " border-[#121212] max-sm:bg-[#121212] max-sm:text-[#fff] hover:text-[#fff] text-[#000000] hover:bg-[#121212] bg-[#ffffff]"
-              : "border-[#e0e0e0] hover:text-[#e0e0e0] max-sm:border-[#2d2d2d] max-sm:bg-[#121212] max-sm:text-[#e0e0e0] hover:border-[#2d2d2d] text-[#e0e0e0] hover:bg-[#121212] bg-[#2d2d2d]"
-          }  border-[1px] transition-all duration-300 py-[12px] px-[35px] rounded-[5px]`}
-        >
-          Submit
-        </button>
+        {clicked ? (
+          <button
+          disabled
+            className={`${
+              theme === "light"
+                ? " border-[#121212] max-sm:bg-[#121212] max-sm:text-[#fff] hover:text-[#fff] text-[#000000] hover:bg-[#121212] bg-[#ffffff]"
+                : "border-[#e0e0e0] hover:text-[#e0e0e0] max-sm:border-[#2d2d2d] max-sm:bg-[#121212] max-sm:text-[#e0e0e0] hover:border-[#2d2d2d] text-[#e0e0e0] hover:bg-[#121212] bg-[#2d2d2d]"
+            }  border-[1px] transition-all duration-300 py-[12px] px-[35px] rounded-[5px]`}
+          >
+            Submit
+          </button>
+        ) : (
+          <button
+            onClick={HandleSubmit}
+            className={`${
+              theme === "light"
+                ? " border-[#121212] max-sm:bg-[#121212] max-sm:text-[#fff] hover:text-[#fff] text-[#000000] hover:bg-[#121212] bg-[#ffffff]"
+                : "border-[#e0e0e0] hover:text-[#e0e0e0] max-sm:border-[#2d2d2d] max-sm:bg-[#121212] max-sm:text-[#e0e0e0] hover:border-[#2d2d2d] text-[#e0e0e0] hover:bg-[#121212] bg-[#2d2d2d]"
+            }  border-[1px] transition-all duration-300 py-[12px] px-[35px] rounded-[5px]`}
+          >
+            Submit
+          </button>
+        )}
         {submit && (
           <div
             className={`${

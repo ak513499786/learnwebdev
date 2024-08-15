@@ -25,12 +25,12 @@ function Blogs() {
         <div
           className={`${
             theme === "light"
-              ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_40px_#00000066]"
+              ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_60px_#00000033]"
               : "bg-[#2d2d2d] text-[#f8f8f2]"
-          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[21px] py-[12px]`}
+          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 max-sm:hover:scale-100 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[21px] py-[12px]`}
         >
           {/* <img src={Blogs1} className="border-[1px]" alt="" /> */}
-          <h1 className="text-[20px] font-semibold mt-[12px]">
+          <h1 className="text-[20px] font-semibold mt-[12px] leading-[130%]">
             Understanding the Basic Structure of HTML
           </h1>
           <div className="flex mt-[12px] gap-[12px]">

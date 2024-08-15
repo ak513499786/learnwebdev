@@ -27,13 +27,15 @@ function Project() {
         <div
           className={`${
             theme === "light"
-              ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_40px_#00000066]"
+              ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_60px_#00000033]"
               : "bg-[#2d2d2d] text-[#f8f8f2]"
-          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[15px] py-[12px]`}
+          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 max-sm:hover:scale-100 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[15px] py-[12px]`}
         >
           <img src={codelinear2} className="rounded-[5px] w-full" alt="" />
-          <h1 className="text-[20px] font-semibold mt-[11.5px]">Codelinear</h1>
-          <p className="text-base mt-[12px] mb-[8px]">Skills Used:</p>
+          <h1 className="text-[20px] font-semibold mt-[12px] leading-[130%]">
+            Codelinear's First Version
+          </h1>
+          <p className="text-base mt-[12px] mb-[8px]">Tech Stack and Skills:</p>
           <div className="flex flex-wrap   gap-[12px]">
             <p className="bg-black text-white px-[10px] py-[2px] text-[14px] rounded-[35px]">
               Reactjs
@@ -66,13 +68,15 @@ function Project() {
         <div
           className={`${
             theme === "light"
-              ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_40px_#00000066]"
+              ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_60px_#00000033]"
               : "bg-[#2d2d2d] text-[#f8f8f2]"
-          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[15px] py-[12px]`}
+          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 max-sm:hover:scale-100 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[15px] py-[12px]`}
         >
           <img src={parallel} className="rounded-[5px] w-full" alt="" />
-          <h1 className="text-[20px] font-semibold mt-[12px]">ParallelEDU</h1>
-          <p className="text-base mt-[12px] mb-[8px]">Skills Used:</p>
+          <h1 className="text-[20px] font-semibold mt-[12px] leading-[130%]">
+            ParallelEdU: The Future of Online Learning
+          </h1>
+          <p className="text-base mt-[12px] mb-[8px]">Tech Stack and Skills:</p>
           <div className="flex flex-wrap   gap-[12px]">
             <p className="bg-black text-white px-[10px] py-[2px] text-[14px] rounded-[35px]">
               Nextjs

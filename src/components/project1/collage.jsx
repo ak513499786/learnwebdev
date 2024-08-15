@@ -64,7 +64,7 @@ function Collage() {
         <a
           href="https://www.codelinear.com"
           target="_blank"
-          className="absolute bottom-[100px] right-[100px] max-sm:bottom-[40px] max-md:right-[50px] max-sm:right-[30px]"
+          className="absolute bg-[white] rounded-[5px] bottom-[100px] right-[100px] max-sm:bottom-[40px] max-md:right-[50px] max-sm:right-[30px]"
         >
           <img src={visit} alt="" />
         </a>

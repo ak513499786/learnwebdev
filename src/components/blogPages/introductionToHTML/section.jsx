@@ -33,7 +33,7 @@ function About() {
           : "text-[#e0e0e0] bg-[#121212]"
       } px-[80px] max-md:px-[40px] max-sm:px-[20px] pt-[51px] pb-[121px] max-md:pb-[51px]`}
     >
-      <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">
+      <h1 className="text-[30px] max-[450px]:text-[24px] leading-[130%] font-bold">
         Introduction:
       </h1>
       <div
@@ -61,7 +61,7 @@ function About() {
           that form a basic HTML document.
         </p>
       </div>
-      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[120%] font-bold">
+      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
         What is HTML?{" "}
       </h1>
       <div
@@ -88,7 +88,7 @@ function About() {
           images, and links, allowing browsers to display them correctly.
         </p>
       </div>
-      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[120%] font-bold">
+      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
         Basic Structure of an HTML Document
       </h1>
       <div
@@ -107,7 +107,7 @@ function About() {
           content. Let's break down these components:
         </p>
       </div>
-      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[120%] font-bold">
+      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
         The &lt;!DOCTYPE html&gt; Declaration
       </h1>
       <div
@@ -132,7 +132,7 @@ function About() {
           </span>
         </p>
       </div>
-      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[120%] font-bold">
+      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
         The &lt;html&gt; Tag
       </h1>
       <div
@@ -157,7 +157,7 @@ function About() {
           </span>
         </p>
       </div>
-      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[120%] font-bold">
+      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
         The &lt;head&gt; Section
       </h1>
       <div
@@ -191,14 +191,14 @@ function About() {
           </span>
         </p>
       </div>
-      <h1 className="text-[20px] pl-[80px] max-sm:pl-[0] mt-[12px] leading-[120%] font-bold">
+      <h1 className="text-[20px] pl-[80px] max-sm:pl-[0] mt-[12px] leading-[130%] font-bold">
         Example:
       </h1>
       <div className="w-[512px] pl-[80px] mt-[20px] max-sm:pl-0 max-sm:w-full">
         <CopyableCode code={head} />
       </div>
 
-      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[120%] font-bold">
+      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
         The &lt;body&gt; Section
       </h1>
       <div
@@ -225,13 +225,13 @@ function About() {
           This includes text, images, links, and more.
         </p>
       </div>
-      <h1 className="text-[20px] pl-[80px] max-sm:pl-[0] mt-[12px] leading-[120%] font-bold">
+      <h1 className="text-[20px] pl-[80px] max-sm:pl-[0] mt-[12px] leading-[130%] font-bold">
         Example:
       </h1>
       <div className="w-[512px] pl-[80px] mt-[20px] max-sm:pl-0 max-sm:w-full">
         <CopyableCode code={body} />
       </div>
-      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[120%] font-bold">
+      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
         Building a Simple HTML Page
       </h1>
       <div
@@ -292,7 +292,7 @@ function About() {
           to create a basic webpage.
         </p>
       </div>
-      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[120%] font-bold">
+      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
         Recap
       </h1>
       <div
@@ -313,7 +313,7 @@ function About() {
           foundation for further HTML exploration.
         </p>
       </div>
-      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[120%] font-bold">
+      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
         Conclusion
       </h1>
       <div

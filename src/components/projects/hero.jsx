@@ -7,7 +7,7 @@ function Hero() {
     <main
       className={`${
         theme === "light" ? "text-[#000] bg-[#fff]" : "text-[#e0e0e0] bg-[#121212]"
-      } px-[80px] h-auto pb-[70px] max-md:pb-[40px] max-md:px-[40px] max-sm:px-[20px] relative pt-[180px] max-sm:pt-[120px]`}
+      } px-[80px] h-auto pb-[110px] max-md:pb-[70px] max-md:px-[40px] max-sm:px-[20px] relative pt-[180px] max-sm:pt-[120px]`}
     >
       <h1 className="text-[92px] max-lg:text-[76px] max-md:text-[62px] max-sm:text-[56px] font-semibold max-xl:w-full w-[1000px] capitalize leading-[120%]">
         Learn More about my skills and experience through my projects
