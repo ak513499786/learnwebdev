@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import ThemeContext from "../../context/themeContext";
-
+import axios from "axios";
 function Form() {
   const { theme } = useContext(ThemeContext);
 
@@ -15,6 +15,7 @@ function Form() {
   const [lastNameGive, setLastNameGive] = useState(true);
   const [Emailgive, setEmailgive] = useState(true);
   const [submit, setsubmit] = useState(false);
+  const [click, setclick] = useState(false);
   const HandleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -22,7 +23,7 @@ function Form() {
       [name]: value,
     });
   };
-  const HandleSubmit = (e) => {
+  const HandleSubmit = async (e) => {
     e.preventDefault();
     if (formData.FirstName === "") {
       setFirstNameGive(false);
@@ -44,7 +45,19 @@ function Form() {
       formData.LastName !== "" &&
       formData.Email !== ""
     ) {
-      setsubmit(true);
+      setclick(true)
+      const response = await axios
+        .post(
+          "https://github.com/ak513499786/Portfolio-Backend.git/api/sendMailContact",
+          formData
+        )
+        .then((response) => {
+          if (response.status === 200) {
+            setsubmit(true);
+          }
+          console.log(response);
+        })
+        .catch((error) => {});
     }
   };
   return (
@@ -53,12 +66,12 @@ function Form() {
         theme === "light"
           ? "bg-[#fff] text-black"
           : " bg-[#121212] text-[#e0e0e0]"
-      }   px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:pt-[51px] max-lg:pb-[151px] flex max-lg:flex-col max-lg:gap-[52px] max-lg:items-center justify-between py-[101px]`}
+      }   px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:pt-[51px] max-lg:pb-[151px] flex max-lg:flex-col gap-[52px] max-lg:items-center justify-between py-[101px]`}
     >
-      <h1 className="text-[36px] max-lg:text-center capitalize leading-[120%] font-semibold">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur,
-        aut.
-      </h1>
+      <p className="text-[36px] max-md:text-[30px] max-sm:text-[24px] max-lg:text-center capitalize leading-[120%] tracking-[-0.56px] max-sm:tracking-[-0.2px] max-md:tracking-[-0.32px]">
+        Feel free to reach out with any questions, opportunities, or
+        collaborations. I'm here to help and would love to hear from you!
+      </p>
       <form
         className={`w-[560px] max-md:w-full max-xl:w-[480px] relative transition-all duration-300 flex flex-col gap-[20px] ${
           theme === "light"
@@ -191,7 +204,7 @@ function Form() {
                 : `${
                     theme === "light"
                       ? "border-[red] placeholder:text-[red]"
-                      : "bg-[#121212] border-[blue] placeholder:text-[blue]"
+                      : "bg-[#2d2d2d] border-[blue] placeholder:text-[blue]"
                   } border-[1px] mt-[6px] pl-[12px] py-[7px] rounded-[7px]`
             }
           />
@@ -227,10 +240,11 @@ function Form() {
         </div>
         <button
           onClick={HandleSubmit}
+          type={click ? 'disable' : 'submit'}
           className={`${
             theme === "light"
-              ? " border-[#121212] hover:text-[#e0e0e0] text-[#000000] hover:bg-[#121212] bg-[#ffffff]"
-              : "border-[#e0e0e0] hover:text-[#e0e0e0] hover:border-[#2d2d2d] text-[#e0e0e0] hover:bg-[#121212] bg-[#2d2d2d]"
+              ? " border-[#121212] max-sm:bg-[#121212] max-sm:text-[#fff] hover:text-[#fff] text-[#000000] hover:bg-[#121212] bg-[#ffffff]"
+              : "border-[#e0e0e0] hover:text-[#e0e0e0] max-sm:border-[#2d2d2d] max-sm:bg-[#121212] max-sm:text-[#e0e0e0] hover:border-[#2d2d2d] text-[#e0e0e0] hover:bg-[#121212] bg-[#2d2d2d]"
           }  border-[1px] transition-all duration-300 py-[12px] px-[35px] rounded-[5px]`}
         >
           Submit

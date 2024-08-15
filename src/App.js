@@ -10,6 +10,9 @@ import IntroPage from "./pages/intro-to-html.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./context/themeContext";
 import ProjectPage from "./pages/project.jsx";
+import Project1 from "./pages/project1.jsx";
+import Project2 from "./pages/project1 1.jsx";
+import Project3 from './pages/project1 2.jsx'
 
 function App() {
   return (
@@ -68,6 +71,33 @@ function App() {
             element={
               <>
                 <ProjectPage />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/projects/codelinear-project"}
+            element={
+              <>
+                <Project1 />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/projects/parallel-project"}
+            element={
+              <>
+                <Project2 />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/projects/codelinear-internship-project"}
+            element={
+              <>
+                <Project3 />
               </>
             }
           />

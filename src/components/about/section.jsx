@@ -14,8 +14,14 @@ function About() {
       } px-[80px] max-md:px-[40px] max-sm:px-[20px] pt-[51px] pb-[121px] max-md:pb-[51px]`}
     >
       <div className="flex gap-[52px] max-lg:flex-col max-lg:items-start justify- items-center">
-        <img src={Me} alt="" width={500} height={300} className="object-cover rounded-[13px]" />
-        <div className="flex flex-col gap-[12px]">
+        <img
+          src={Me}
+          alt=""
+          width={500}
+          height={300}
+          className="object-cover rounded-[13px]"
+        />
+        <div className="flex max-sm:w-full flex-col gap-[12px]">
           <div className="flex items-end gap-[12px]">
             <h1 className="text-[30px] max-[450px]:text-[24px] leading-[120%] font-bold">
               Name:
@@ -44,6 +50,7 @@ function About() {
           </div>
           <a
             target="_blank"
+            className="max-sm:w-full"
             href="https://drive.google.com/file/d/1IpelorQYhuFYQ6jjBHnlzt7lKooGIeaT/view?usp=drive_link"
           >
             {" "}
@@ -51,8 +58,8 @@ function About() {
               className={`w-full text-[20px] border-[1px] ${
                 theme === "light"
                   ? "text-[#32cd32] max-sm:w-full max-sm:bg-[#32cd32] max-sm:text-white hover:bg-[#32cd32] hover:text-white border-[#32cd32]"
-                  : "text-[#2e8b5f] hover:bg-[#2e8b5f] max-sm:w-full max-sm:bg-[#2e8b5f] max-sm:text-black border-[#2e8b5f] hover:text-black"
-              } transition-all font-semibold duration-300 mt-[20px] rounded-[7px] h-[45px]`}
+                  : "text-[#2e8b5f] hover:bg-[#2e8b5f] max-sm:bg-[#2e8b5f] max-sm:text-black border-[#2e8b5f] hover:text-black"
+              } transition-all max-sm:w-full font-semibold duration-300 mt-[20px] rounded-[7px] h-[45px]`}
             >
               Resume
             </button>
@@ -134,16 +141,17 @@ function About() {
         <p className="mt-[52px] text-[20px] w-[1024px]">
           Looking ahead, I’m excited to continue pushing the boundaries of web
           development, learning new technologies, and taking on challenging
-          projects. My goal is to keep{" "}
+          projects. My goal is to 
           <span
             className={`${
               theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
-            growing as a developer
-          </span>
-          , contribute to impactful projects, and collaborate with others who
-          share a passion for creating outstanding digital experiences.
+            {' '}keep growing{' '}
+          </span> 
+          as a developer , contribute to impactful projects, and collaborate
+          with others who share a passion for creating outstanding digital
+          experiences.
         </p>
       </div>
     </section>

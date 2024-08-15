@@ -25,7 +25,7 @@ function Blogs() {
             theme === "light"
               ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_40px_#00000066]"
               : "bg-[#2d2d2d] text-[#f8f8f2]"
-          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[21px] py-[12px]`}
+          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[15px] py-[12px]`}
         >
           <img src={codelinear} className="rounded-[5px]" alt="" />
           <h1 className="text-[20px] font-semibold mt-[12px]">Codelinear</h1>
@@ -47,23 +47,27 @@ function Blogs() {
               Swiper
             </p>
           </div>
-          <div className="absolute flex left-[72%] max-[670px]:left-[calc(100%-110px)] max-xl:left-[65%] cursor-pointer bottom-[10px]">
+          <Link
+            to={"/projects/codelinear-project"}
+            onClick={handleClick}
+            className="absolute flex left-[72%] max-[670px]:left-[calc(100%-110px)] max-xl:left-[65%] cursor-pointer bottom-[10px]"
+          >
             <p className="text-[14px] italic hover:mr-[8px] transition-all duration-300">
-              Coming Soon 
+              Read more
             </p>
             <img
               src={Arrow}
               className={`${theme === "light" ? "" : "invert"} w-[24px]`}
               alt=""
             />
-          </div>
+          </Link>
         </div>
         <div
           className={`${
             theme === "light"
               ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_40px_#00000066]"
               : "bg-[#2d2d2d] text-[#f8f8f2]"
-          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[21px] py-[12px]`}
+          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[15px] py-[12px]`}
         >
           <img src={parallel} className="rounded-[5px] w-full" alt="" />
           <h1 className="text-[20px] font-semibold mt-[12px]">ParallelEDU</h1>
@@ -79,23 +83,27 @@ function Blogs() {
               GSAP
             </p>
           </div>
-          <div className="absolute flex left-[72%] max-[670px]:left-[calc(100%-110px)] max-xl:left-[65%] cursor-pointer bottom-[10px]">
+          <Link
+            to={"/projects/parallel-project"}
+            onClick={handleClick}
+            className="absolute flex left-[72%] max-[670px]:left-[calc(100%-110px)] max-xl:left-[65%] cursor-pointer bottom-[10px]"
+          >
             <p className="text-[14px] italic hover:mr-[8px] transition-all duration-300">
-              Coming Soon 
+              Read more
             </p>
             <img
               src={Arrow}
               className={`${theme === "light" ? "" : "invert"} w-[24px]`}
               alt=""
             />
-          </div>
+          </Link>
         </div>
         <div
           className={`${
             theme === "light"
               ? "bg-white text-black shadow-[0px_0px_40px_#00000033] hover:shadow-[0px_0px_40px_#00000066]"
               : "bg-[#2d2d2d] text-[#f8f8f2]"
-          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[21px] py-[12px]`}
+          } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[15px] py-[12px]`}
         >
           <img src={codelinear2} className="rounded-[5px] w-full" alt="" />
           <h1 className="text-[20px] font-semibold mt-[11.5px]">Codelinear</h1>
@@ -114,16 +122,20 @@ function Blogs() {
               Swiper
             </p>
           </div>
-          <div className="absolute flex left-[72%] max-[670px]:left-[calc(100%-110px)] max-xl:left-[65%] cursor-pointer bottom-[10px]">
+          <Link
+            to={"/projects/codelinear-internship-project"}
+            onClick={handleClick}
+            className="absolute flex left-[72%] max-[670px]:left-[calc(100%-110px)] max-xl:left-[65%] cursor-pointer bottom-[10px]"
+          >
             <p className="text-[14px] italic hover:mr-[8px] transition-all duration-300">
-              Coming Soon 
+              Read more
             </p>
             <img
               src={Arrow}
               className={`${theme === "light" ? "" : "invert"} w-[24px]`}
               alt=""
             />
-          </div>
+          </Link>
         </div>
       </div>
     </section>

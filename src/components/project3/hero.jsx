@@ -11,7 +11,7 @@ function Hero() {
       } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:h-[500px] max-sm:pt-[200px] h-[100vh] relative pt-[300px]`}
     >
       <h1 className="text-[92px] max-lg:text-[76px] max-md:text-[62px] max-sm:text-[56px] font-semibold capitalize leading-[120%]">
-        Portfolio Project
+        Codelinear Project - Intership 
       </h1>
     </main>
   );
