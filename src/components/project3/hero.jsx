@@ -7,11 +7,14 @@ function Hero() {
   return (
     <main
       className={`${
-        theme === "light" ? "text-[#000] bg-[#fff]" : "text-[#e0e0e0] bg-[#121212]"
-      } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:h-[500px] max-sm:pt-[200px] h-[100vh] relative pt-[300px]`}
+        theme === "light"
+          ? "text-[#000] bg-[#fff]"
+          : "text-[#e0e0e0] bg-[#121212]"
+      } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:pb-[80px] max-sm:pt-[200px] pb-[120px] relative pt-[280px]`}
     >
       <h1 className="text-[92px] max-lg:text-[76px] max-md:text-[62px] max-sm:text-[56px] font-semibold capitalize leading-[120%]">
-        Codelinear Project - Intership 
+        Building the Foundation: <br />
+        Codelinear's First Version{" "}
       </h1>
     </main>
   );

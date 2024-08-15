@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useContext } from "react";
 import ThemeContext from "../../context/themeContext";
 
@@ -10,9 +11,56 @@ function Section() {
         theme === "light"
           ? "text-[#000] bg-[#fff]"
           : "text-[#e0e0e0] bg-[#121212]"
-      } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:py-[51px] py-[101px]`}
+      } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:pb-[51px] pb-[121px]`}
     >
-      <h1 className="text-[64px] max-md:text-[56px] max-sm:text-[44px] max-[500px]:text-[36px] capitalize leading-[120%] font-semibold">
+      <div className="flex max-md:flex-col max-xl:gap-[32px] justify-between max-sm:py-[51px] pt-[141px] pb-[221px]">
+        <p
+          className={`${
+            theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"
+          } max-xl:w-fll text-[32px] max-md:w-full max-sm:text-[24px] w-[594px]`}
+        >
+          {" "}
+          Crafting a sleek, educational platform with a modern approach to online learning using Next.js and Tailwind CSS
+        </p>
+        <div className="w-[500px] max-md:w-full max-xl:w-[300px] max-[900px]:w-[200px]">
+          <div className="flex w-[444px] max-xl:w-full mb-[24px] max-md:mb-[12px] gap-[12px] items-center">
+            <p className="text-base ml-[4px] font-medium">
+              Skills Used
+            </p>
+            <span className="h-[1px] w-[calc(100%-180px)] max-xl:w-[calc(100%-100px)] bg-[#12121266]"></span>
+          </div>
+          <div className="flex max-md:w-full flex-wrap max-[900px]:w-[200px] w-[300px] gap-[12px]">
+            <p
+              className={`${
+                theme === "light"
+                  ? "bg-[#12121233] text-[#000] font-medium"
+                  : "bg-[#2d2d2d] text-[#f8f8f2] font-medium"
+              } px-[20px] py-[5px] text-[14px] rounded-[5px]`}
+            >
+              Nextjs
+            </p>
+            <p
+              className={`${
+                theme === "light"
+                  ? "bg-[#12121233] text-[#000] font-medium"
+                  : "bg-[#2d2d2d] text-[#f8f8f2] font-medium"
+              } px-[20px] py-[5px] text-[14px] rounded-[5px]`}
+            >
+              TailwindCSS
+            </p>
+            <p
+              className={`${
+                theme === "light"
+                  ? "bg-[#12121233] text-[#000] font-medium"
+                  : "bg-[#2d2d2d] text-[#f8f8f2] font-medium"
+              } px-[20px] py-[5px] text-[14px] rounded-[5px]`}
+            >
+              GSAP
+            </p>
+          </div>
+        </div>
+      </div>
+      <h1 className="text-[64px] max-md:text-[56px] mt-[121px] max-sm:text-[44px] max-[500px]:text-[36px] capitalize leading-[120%] font-semibold">
         Description and Skills:
       </h1>
       <p
@@ -74,7 +122,7 @@ function Section() {
         voluptas sapiente! Excepturi ut molestiae suscipit voluptate cupiditate
         quam debitis soluta voluptatum autem.
       </p>
-      <h1 className="mt-[30px] text-[20px]">JavaScript:</h1>
+      <h1 className="mt-[30px] text-[20px]">Reactjs:</h1>
       <p
         className={`${
           theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"
@@ -84,16 +132,7 @@ function Section() {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
         ducimus inventore nesciunt recusandae numquam animi nostrum laudantium
         voluptas sapiente! Excepturi ut molestiae suscipit voluptate cupiditate
-        quam debitis soluta voluptatum autem.{" "}
-        <a
-          href="https://parallel-edu.github.io/FullStack-Batch-3/project/index.html"
-          target="_blank"
-          className="underline"
-        >
-          {" "}
-          Click here
-        </a>{" "}
-        to visit my project.
+        quam debitis soluta voluptatum autem.
       </p>
     </section>
   );

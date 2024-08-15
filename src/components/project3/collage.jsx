@@ -36,7 +36,7 @@ function Collage() {
                   theme === "light"
                     ? "border-[black] hover:bg-black hover:text-white max-sm:bg-black max-sm:text-white"
                     : "border-[white] hover:bg-white hover:text-black text-white max-sm:text-black max-sm:bg-white"
-                } w-[180px] text-center border-[1px] rounded-[7px] max-sm:w-full px-[20px] py-[12px] transition-all`}
+                } w-[180px] text-center font-semibold border-[1px] rounded-[7px] max-sm:w-full px-[20px] py-[12px] transition-all`}
               >
                 Visit the Website
               </a>
@@ -46,7 +46,7 @@ function Collage() {
                   theme === "light"
                     ? "border-[#32cd32] text-[#32cd32] hover:bg-[#32cd32] hover:text-white max-sm:bg-[#32cd32] max-sm:text-[white]"
                     : "border-[#2e8b5f] text-[#2e8b5f] hover:bg-[#2e8b5f] max-sm:bg-[#2e8b5f] max-sm:text-white hover:text-white"
-                } ml-[12px] max-sm:ml-0 max-sm:block max-sm:w-full border-[1px] rounded-[7px] w-[180px] px-[20px] py-[12px] transition-all`}
+                } ml-[12px] max-sm:ml-0 font-semibold max-sm:block max-sm:w-full border-[1px] rounded-[7px] w-[180px] px-[20px] py-[12px] transition-all`}
               >
                 Check From Here
               </button>

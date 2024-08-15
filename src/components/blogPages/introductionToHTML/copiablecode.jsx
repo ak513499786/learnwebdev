@@ -25,13 +25,13 @@ const CopyableCode = ({ code }) => {
           : "bg-[#2d2d2d] text-[#f8f8f2]"
       } overflow-x-scroll p-[20px] scroll-bar rounded-[5px] mb-[10px]`}
     >
-      <pre className="whitespace-prewrap">{code}</pre>
+      <pre className="whitespace-prewrap pr-[20px]">{code}</pre>
       <button
         className={`absolute ${
         theme === "light"
           ? "bg-[#32cd32] text-white"
           : "bg-[#2e8b5f] text-black"
-      } top-[10px] right-[10px] px-[10px] py-[5px] rounded-[5px] cursor-pointer`}
+      } top-[10px] font-semibold right-[10px] px-[10px] py-[5px] rounded-[5px] cursor-pointer`}
         onClick={copyCodeToClipboard}
       >
         {copied ? "Copied!" : "Copy"}

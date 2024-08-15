@@ -48,7 +48,7 @@ function Form() {
       setclick(true)
       const response = await axios
         .post(
-          "https://github.com/ak513499786/Portfolio-Backend.git/api/sendMailContact",
+          "https://portfolio-backend-xee8.onrender.com//api/sendMailContact",
           formData
         )
         .then((response) => {
@@ -68,7 +68,7 @@ function Form() {
           : " bg-[#121212] text-[#e0e0e0]"
       }   px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:pt-[51px] max-lg:pb-[151px] flex max-lg:flex-col gap-[52px] max-lg:items-center justify-between py-[101px]`}
     >
-      <p className="text-[36px] max-md:text-[30px] max-sm:text-[24px] max-lg:text-center capitalize leading-[120%] tracking-[-0.56px] max-sm:tracking-[-0.2px] max-md:tracking-[-0.32px]">
+      <p className="text-[30px] max-md:text-[25px] max-sm:text-[20px] max-lg:text-center max-sm:text-left capitalize leading-[130%] tracking-[-0.56px] max-sm:tracking-[-0.2px] max-md:tracking-[-0.32px]">
         Feel free to reach out with any questions, opportunities, or
         collaborations. I'm here to help and would love to hear from you!
       </p>

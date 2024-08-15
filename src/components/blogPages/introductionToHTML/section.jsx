@@ -4,8 +4,10 @@ import CopyableCode from "./copiablecode";
 
 function About() {
   const { theme } = useContext(ThemeContext);
-  const head = `<h1>Hello, World!</h1>
-<p>This is a paragraph.</p>`;
+  const head = `<head>
+  <meta charset="UTF-8">
+  <title>My First HTML Page</title>
+</head>`;
   const body = `<body>
   <h1>Welcome to My Webpage</h1>
   <p>This is a simple HTML document.</p>
@@ -38,10 +40,25 @@ function About() {
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
-          Discover the fundamental structure of HTML, the backbone of every
-          webpage. Whether you're just starting out or need a quick refresher,
-          this guide will help you grasp the essential tags and elements that
-          form a basic HTML document.
+          Discover the fundamental structure of{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            HTML
+          </span>
+          , the backbone of every webpage. Whether you're just starting out or
+          need a quick refresher, this guide will help you grasp the
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            {" "}
+            essential tags and elements
+          </span>{" "}
+          that form a basic HTML document.
         </p>
       </div>
       <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[120%] font-bold">
@@ -51,10 +68,24 @@ function About() {
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
-          HTML, which stands for HyperText Markup Language, is the standard
-          language used to create webpages. It defines the structure of your
-          content, like headings, paragraphs, images, and links, allowing
-          browsers to display them correctly.
+          HTML, which stands for{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            HyperText Markup Language
+          </span>
+          , is the standard language{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            used to create webpages.
+          </span>
+          It defines the structure of your content, like headings, paragraphs,
+          images, and links, allowing browsers to display them correctly.
         </p>
       </div>
       <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[120%] font-bold">
@@ -64,9 +95,16 @@ function About() {
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
-          Every HTML document follows a basic structure, consisting of essential
-          tags that tell the browser how to render the content. Let's break down
-          these components:
+          Every{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            HTML document follows a basic structure,
+          </span>{" "}
+          consisting of essential tags that tell the browser how to render the
+          content. Let's break down these components:
         </p>
       </div>
       <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[120%] font-bold">
@@ -76,9 +114,22 @@ function About() {
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
-          The first line in any HTML document is the &lt;!DOCTYPE html&gt;
-          declaration. This tells the browser that the document follows the
-          HTML5 standard.
+          The first line in any HTML document is the{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;!DOCTYPE html&gt;
+          </span>{" "}
+          declaration. This tells the browser that the document follows the{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            HTML5 standard.
+          </span>
         </p>
       </div>
       <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[120%] font-bold">
@@ -88,8 +139,22 @@ function About() {
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
-          The &lt;html&gt; tag is the root element of the document. It contains
-          all the content of your webpage.
+          The{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;html&gt;
+          </span>{" "}
+          tag is the root element of the document. It contains{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            all the content of your webpage.
+          </span>
         </p>
       </div>
       <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[120%] font-bold">
@@ -99,10 +164,31 @@ function About() {
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
-          The &lt;head&gt; section includes meta-information about your webpage,
-          like the title, character set, and links to stylesheets or scripts.
-          Although it doesn’t directly display content, it’s crucial for your
-          page’s setup.
+          The{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;head&gt;{" "}
+          </span>
+          section includes{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            meta-information about your webpage
+          </span>
+          , like the title, character set, and links to stylesheets or scripts.
+          Although it doesn’t directly display content,{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            it’s crucial for your page’s setup.
+          </span>
         </p>
       </div>
       <h1 className="text-[20px] pl-[80px] max-sm:pl-[0] mt-[12px] leading-[120%] font-bold">
@@ -119,8 +205,24 @@ function About() {
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
-          The &lt;head&gt; section contains all the visible content on your
-          webpage. This includes text, images, links, and more.
+          The{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;body&gt;{" "}
+          </span>
+          section contains
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            {" "}
+            all the visible content on your webpage.{" "}
+          </span>
+          This includes text, images, links, and more.
         </p>
       </div>
       <h1 className="text-[20px] pl-[80px] max-sm:pl-[0] mt-[12px] leading-[120%] font-bold">
@@ -137,7 +239,14 @@ function About() {
       >
         <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
           Now that we’ve covered the basics, let’s put everything together and
-          build a simple HTML page.
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            {" "}
+            build a simple HTML page.
+          </span>
         </p>
       </div>
       <div className="w-[790px] max-lg:w-full max-lg:pl-[0px] pl-[80px] mt-[20px] mb-[10px]">
@@ -147,10 +256,40 @@ function About() {
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
-          In this example, we start with the &lt;!DOCTYPE html&gt; declaration,
-          then add the &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; sections.
-          Inside the &lt;body&gt;, we’ve added a heading and a paragraph to
-          create a basic webpage.
+          In this example, we start with the{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;!DOCTYPE html&gt;
+          </span>{" "}
+          declaration, then add the
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            {" "}
+            &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;{" "}
+          </span>
+          sections. Inside the{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;body&gt;
+          </span>
+          , we’ve added{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            a heading and a paragraph
+          </span>{" "}
+          to create a basic webpage.
         </p>
       </div>
       <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[120%] font-bold">
@@ -161,10 +300,17 @@ function About() {
       >
         <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
           To summarize, we learned about the essential tags that form the
-          structure of an HTML document, including &lt;!DOCTYPE html&gt;,
-          &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;. We also built a simple
-          webpage using these elements, laying a strong foundation for further
-          HTML exploration.
+          structure of an HTML document, including
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            {" "}
+            &lt;!DOCTYPE html&gt;, &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;.{" "}
+          </span>
+          We also built a simple webpage using these elements, laying a strong
+          foundation for further HTML exploration.
         </p>
       </div>
       <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[120%] font-bold">
@@ -181,13 +327,13 @@ function About() {
           same topic, and stay tuned for more web development content!
         </p>
       </div>
-      <div
-        className={`mt-[40px]`}
-      >
+      <div className={`mt-[40px]`}>
         <a
           href="https://www.youtube.com/watch?v=PEbsYf6NRa4"
           target="_blank"
-          className={`${theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"} hover:underline font-semibold max-sm:underline text-base`}
+          className={`${
+            theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+          } hover:underline font-bold max-sm:underline text-[20px]`}
         >
           Watch my HTML Structure Tutorial on YouTube
         </a>
