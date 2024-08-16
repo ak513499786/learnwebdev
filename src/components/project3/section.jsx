@@ -13,7 +13,7 @@ function Section() {
           : "text-[#e0e0e0] bg-[#121212]"
       } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:py-[81px] pt-[141px] pb-[221px]`}
     >
-      <div className="flex max-md:flex-col max-xl:gap-[32px] justify-between max-sm:py-[81px] pb-[221px]">
+      <div className="flex max-md:flex-col max-md:gap-[56px] max-xl:gap-[32px] justify-between max-sm:pt-[0px] max-sm:pb-[81px] pb-[221px]">
         <p
           className={`${
             theme === "light" ? "text-[#000]" : "text-[#e0e0e0]"
@@ -68,7 +68,7 @@ function Section() {
           </div>
         </div>
       </div>
-      <div className="flex w-[1154px] max-xl:w-full mb-[24px] max-sm:mb-[16px] gap-[12px] items-center">
+      <div className="flex w-[1154px] max-xl:w-full mb-[20px] max-sm:mb-[8px] gap-[12px] items-center">
         <p className="text-base italic">About</p>
         <span className="h-[1px] w-full bg-[#12121266]"></span>{" "}
       </div>
