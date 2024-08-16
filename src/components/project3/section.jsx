@@ -11,7 +11,7 @@ function Section() {
         theme === "light"
           ? "text-[#000] bg-[#fff]"
           : "text-[#e0e0e0] bg-[#121212]"
-      } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:py-[51px] pt-[141px] pb-[221px]`}
+      } px-[80px] max-md:px-[40px] max-sm:px-[20px] max-sm:py-[81px] pt-[141px] pb-[221px]`}
     >
       <div className="flex max-md:flex-col max-xl:gap-[32px] justify-between max-sm:py-[81px] pb-[221px]">
         <p
@@ -24,7 +24,7 @@ function Section() {
           initial design and structure during my internship
         </p>
         <div className="w-[500px] max-md:w-full max-xl:w-[300px] max-[900px]:w-[200px]">
-          <div className="flex w-[444px] max-xl:w-full mb-[24px] gap-[12px] items-center">
+          <div className="flex w-[444px] max-xl:w-full mb-[24px] max-sm:mb-[16px] gap-[12px] items-center">
             <p className="text-base italic">Tech Stack and Skills</p>
             <span className="h-[1px] w-[calc(100%-160px)] bg-[#12121266]"></span>{" "}
           </div>
@@ -68,7 +68,7 @@ function Section() {
           </div>
         </div>
       </div>
-      <div className="flex w-[1154px] max-xl:w-full mb-[24px] gap-[12px] items-center">
+      <div className="flex w-[1154px] max-xl:w-full mb-[24px] max-sm:mb-[16px] gap-[12px] items-center">
         <p className="text-base italic">About</p>
         <span className="h-[1px] w-full bg-[#12121266]"></span>{" "}
       </div>
