@@ -12,7 +12,8 @@ import { ThemeProvider } from "./context/themeContext";
 import ProjectPage from "./pages/project.jsx";
 import Project1 from "./pages/project1.jsx";
 import Project2 from "./pages/project1 1.jsx";
-import Project3 from './pages/project1 2.jsx'
+import Project3 from "./pages/project1 2.jsx";
+import HTMLTags from "./pages/html-tags.jsx";
 
 function App() {
   return (
@@ -62,6 +63,15 @@ function App() {
             element={
               <>
                 <IntroPage />
+              </>
+            }
+          />
+          <Route
+            exact
+            path={"/blogs/types-of-tags"}
+            element={
+              <>
+                <HTMLTags />
               </>
             }
           />

@@ -1,30 +1,8 @@
 import React, { useContext } from "react";
 import ThemeContext from "../../../context/themeContext";
-import CopyableCode from "./copiablecode";
 
 function About() {
   const { theme } = useContext(ThemeContext);
-  const head = `<head>
-  <meta charset="UTF-8">
-  <title>My First HTML Page</title>
-</head>`;
-  const body = `<body>
-  <h1>Welcome to My Webpage</h1>
-  <p>This is a simple HTML document.</p>
-</body>`;
-  const page = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First HTML Page</title>
-</head>
-<body>
-  <h1>Welcome to My Webpage</h1>
-  <p>This is a simple HTML document.</p>
-</body>
-</html>
-`;
   return (
     <section
       className={`${
@@ -40,256 +18,261 @@ function About() {
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
-          Discover the fundamental structure of{" "}
           <span
             className={`${
               theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
-            HTML
+            HTML tags{" "}
           </span>
-          , the backbone of every webpage. Whether you're just starting out or
-          need a quick refresher, this guide will help you grasp the
+          are fundamental
           <span
             className={`${
               theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
             {" "}
-            essential tags and elements
+            components of web development,
           </span>{" "}
-          that form a basic HTML document.
+          used to structure and format webpages. Here’s a guide to the different
+          types of HTML tags you’ll encounter.
         </p>
-      </div>
-      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
-        What is HTML?{" "}
-      </h1>
-      <div
-        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
-      >
-        <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
-          HTML, which stands for{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            HyperText Markup Language
-          </span>
-          , is the standard language{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            used to create webpages.
-          </span>
-          It defines the structure of your content, like headings, paragraphs,
-          images, and links, allowing browsers to display them correctly.
-        </p>
-      </div>
-      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
-        Basic Structure of an HTML Document:
-      </h1>
-      <div
-        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
-      >
-        <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
-          Every{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            HTML document follows a basic structure,
-          </span>{" "}
-          consisting of essential tags that tell the browser how to render the
-          content. Let's break down these components:
-        </p>
-      </div>
-      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
-        The &lt;!DOCTYPE html&gt; Declaration
-      </h1>
-      <div
-        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
-      >
-        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
-          The first line in any HTML document is the{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            &lt;!DOCTYPE html&gt;
-          </span>{" "}
-          declaration. This tells the browser that the document follows the{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            HTML5 standard.
-          </span>
-        </p>
-      </div>
-      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
-        The &lt;html&gt; Tag
-      </h1>
-      <div
-        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
-      >
-        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
-          The{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            &lt;html&gt;
-          </span>{" "}
-          tag is the root element of the document. It contains{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            all the content of your webpage.
-          </span>
-        </p>
-      </div>
-      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
-        The &lt;head&gt; Section
-      </h1>
-      <div
-        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
-      >
-        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
-          The{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            &lt;head&gt;{" "}
-          </span>
-          section includes{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            meta-information about your webpage
-          </span>
-          , like the title, character set, and links to stylesheets or scripts.
-          Although it doesn’t directly display content,{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            it’s crucial for your page’s setup.
-          </span>
-        </p>
-      </div>
-      <h1 className="text-[20px] pl-[80px] max-sm:pl-[0] mt-[12px] leading-[130%] font-bold">
-        Example:
-      </h1>
-      <div className="w-[512px] pl-[80px] mt-[20px] max-sm:pl-0 max-sm:w-full">
-        <CopyableCode code={head} />
       </div>
 
+      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
+        Block Tags:{" "}
+      </h1>
+      <div
+        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
+      >
+        <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
+          Block tags are used to
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            {" "}
+            create large sections of content{" "}
+          </span>
+          that start on a new line and take up the full width available.
+        </p>
+      </div>
       <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
-        The &lt;body&gt; Section
+        Common Block Tags
       </h1>
       <div
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
-          The{" "}
           <span
             className={`${
               theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
-            &lt;body&gt;{" "}
-          </span>
-          section contains
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            {" "}
-            all the visible content on your webpage.{" "}
-          </span>
-          This includes text, images, links, and more.
+            &lt;div&gt;:
+          </span>{" "}
+          Groups larger sections of content.
         </p>
-      </div>
-      <h1 className="text-[20px] pl-[80px] max-sm:pl-[0] mt-[12px] leading-[130%] font-bold">
-        Example:
-      </h1>
-      <div className="w-[512px] pl-[80px] mt-[20px] max-sm:pl-0 max-sm:w-full">
-        <CopyableCode code={body} />
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;h1&gt;
+          </span>{" "}
+          to{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;h6&gt;:
+          </span>{" "}
+          Groups larger sections of content.
+        </p>
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;p&gt;:
+          </span>{" "}
+          Define headings with varying levels of importance.{" "}
+        </p>
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;section&gt;:
+          </span>{" "}
+          Defines a section of content.{" "}
+        </p>
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;article&gt;:
+          </span>{" "}
+          Represents a self-contained piece of content.{" "}
+        </p>
       </div>
       <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
-        Building a Simple HTML Page:
+        Inline Tags:
       </h1>
       <div
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
-          Now that we’ve covered the basics, let’s put everything together and
+          Inline tags do not start on a new line and only
           <span
             className={`${
               theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
             {" "}
-            build a simple HTML page.
+            take up as much width as necessary.{" "}
           </span>
+          They are used for small elements within block-level content.
         </p>
       </div>
-      <div className="w-[790px] max-lg:w-full max-lg:pl-[0px] pl-[80px] mt-[20px] mb-[10px]">
-        <CopyableCode code={page} />
+      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
+        Common Inline Tags
+      </h1>
+      <div
+        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
+      >
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;span&gt;:
+          </span>{" "}
+          Target or style a portion of text.{" "}
+        </p>
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;a&gt;:
+          </span>{" "}
+          Creates hyperlinks.{" "}
+        </p>
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;img&gt;:
+          </span>{" "}
+          Embeds images.{" "}
+        </p>
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;strong&gt;:
+          </span>{" "}
+          Indicates strong importance.
+        </p>
       </div>
+      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
+        Paired Tags:
+      </h1>
       <div
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
-          In this example, we start with the{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            &lt;!DOCTYPE html&gt;
-          </span>{" "}
-          declaration, then add the
+          Paired tags
           <span
             className={`${
               theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
             {" "}
-            &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;{" "}
+            consist of an opening and a closing tag,{" "}
           </span>
-          sections. Inside the{" "}
+          enclosing content to be styled or treated in a specific way.
+        </p>
+      </div>
+      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
+        Syntax
+      </h1>
+      <div
+        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
+      >
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
           <span
             className={`${
               theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
             } font-bold`}
           >
-            &lt;body&gt;
-          </span>
-          , we’ve added{" "}
-          <span
-            className={`${
-              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
-            } font-bold`}
-          >
-            a heading and a paragraph
+            &lt;tagname&gt;
           </span>{" "}
-          to create a basic webpage.
+          content goes here{" "}
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;/tagname&gt;
+          </span>{" "}
+        </p>
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span className={`italic font-semibold`}>Note:</span> Content along
+          with opening tag and closing tag is know as complete element
+        </p>
+      </div>
+      <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
+        Self-Closing Tags:
+      </h1>
+      <div
+        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
+      >
+        <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
+          Single tags
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            {" "}
+            do not have a closing tag{" "}
+          </span>
+          and are used for elements that do not enclose content.
+        </p>
+      </div>
+      <h1 className="text-[24px] pl-[80px] max-sm:pl-[0] mt-[32px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
+        Syntax
+      </h1>
+      <div
+        className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
+      >
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span
+            className={`${
+              theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"
+            } font-bold`}
+          >
+            &lt;tagname /&gt;
+          </span>{" "}
+        </p>
+        <p className="mt-[10px] pl-[80px] max-sm:pl-[0] text-[20px] w-[1024px] max-xl:w-full">
+          <span className={`italic font-semibold`}>Note:</span> Self closing
+          tags are know as self-closing element
         </p>
       </div>
       <h1 className="text-[30px] mt-[52px] max-[450px]:text-[24px] leading-[130%] font-bold leading-[130%]">
@@ -299,14 +282,14 @@ function About() {
         className={`${theme === "light" ? "text-[#4a4a4a]" : "text-[#b3b3b3]"}`}
       >
         <p className="mt-[10px] text-[20px] w-[1024px] max-xl:w-full">
-          Understanding the basic structure of HTML is the first step in your
-          web development journey. With this knowledge, you can start creating
-          your own webpages and explore more advanced HTML elements. If you
-          found this post helpful, be sure to check out my video tutorial on the
-          same topic, and stay tuned for more web development content!
+          Understanding these types of HTML tags—block tags, inline tags, paired
+          tags, and self-Closing tags—is crucial for building and structuring
+          webpages effectively. Each type of tag serves a specific purpose and
+          helps in organizing content in a meaningful way. By mastering these
+          tags, you can create well-structured and visually appealing web pages.
         </p>
       </div>
-      <div className={`mt-[40px]`}>
+      {/* <div className={`mt-[40px]`}>
         <a
           href="https://www.youtube.com/watch?v=PEbsYf6NRa4"
           target="_blank"
@@ -316,7 +299,7 @@ function About() {
         >
           Watch my HTML Structure Tutorial on YouTube
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -26,6 +26,11 @@
       <priority>0.9</priority>
    </url>
    <url>
+      <loc>https://www.learnwebdev.site/blogs/types-of-tags</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
       <loc>https://www.learnwebdev.site/projects</loc>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
