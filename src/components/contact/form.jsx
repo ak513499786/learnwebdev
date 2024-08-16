@@ -240,7 +240,7 @@ function Form() {
         </div>
         {clicked ? (
           <button
-          disabled
+            disabled
             className={`${
               theme === "light"
                 ? " border-[#121212] max-sm:bg-[#121212] max-sm:text-[#fff] hover:text-[#fff] text-[#000000] hover:bg-[#121212] bg-[#ffffff]"
@@ -267,7 +267,7 @@ function Form() {
               theme === "light"
                 ? "text-[#000000] bg-[#ffffff]"
                 : "text-[#fff] bg-[#2d2d2d]"
-            }  absolute max-lg:left-0 max-lg:bottom-[-100px] max-lg:w-full max-lg:pl-[16px] left-[-220px] bottom-[0px] shadow-[0px_0px_50px_#00000033] h-[80px]  flex items-center rounded-[13px] w-[200px] text-center`}
+            }  absolute max-lg:left-0 max-lg:bottom-[-100px] max-sm:text-center max-sm:pl-0 max-lg:w-full max-lg:pl-[16px] left-[-220px] bottom-[0px] shadow-[0px_0px_50px_#00000033] h-[80px]  flex items-center rounded-[13px] w-[200px] text-center`}
           >
             Your Form Have been Submitted
           </div>
