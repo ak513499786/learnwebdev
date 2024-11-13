@@ -35,7 +35,7 @@ function Footer() {
               Github
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               target="_blank"
               className="hover:underline translate-all"
@@ -43,7 +43,7 @@ function Footer() {
             >
               Youtube
             </a>
-          </li>
+          </li> */}
         </ul>
         <ul className="flex flex-col max-[500px]:w-[120px] gap-[4px]">
           <li className="font-semibold mb-[4px] text-[20px]">Contact:</li>
@@ -85,7 +85,7 @@ function Footer() {
             Projects
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             className="hover:underline translate-all"
             onClick={handleClick}
@@ -93,7 +93,7 @@ function Footer() {
           >
             Blogs
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             className="hover:underline translate-all"

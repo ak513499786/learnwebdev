@@ -101,7 +101,7 @@ function Navbar() {
                 Contact
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 onClick={handleClick}
                 className="max-sm:text-[24px]"
@@ -109,7 +109,7 @@ function Navbar() {
               >
                 Blogs
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 onClick={handleClick}
@@ -123,7 +123,7 @@ function Navbar() {
           <div className=" mt-[34px]">
             <p className="mb-[12px] font-semibold">Socials:</p>
             <ul className="flex gap-[24px]">
-              <li>
+              {/* <li>
                 <a
                   target="_blank"
                   href="https://www.youtube.com/@learnwebdev-g3c"
@@ -138,7 +138,7 @@ function Navbar() {
                     alt=""
                   />
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a target="_blank" href="https://github.com/ak513499786">
                   <img
@@ -183,11 +183,11 @@ function Navbar() {
                 About
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link onClick={handleClick} to={"/blogs"}>
                 Blogs
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link onClick={handleClick} to={"/projects"}>
                 Projects

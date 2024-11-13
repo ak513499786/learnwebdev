@@ -68,7 +68,7 @@ function Sidebar() {
               </a>
             </abbr>
           </li>
-          <li>
+          {/* <li>
             <a target="_blank" href="https://www.youtube.com/@learnwebdev-g3c">
               <img
                 src={
@@ -80,7 +80,7 @@ function Sidebar() {
                 alt=""
               />
             </a>
-          </li>
+          </li> */}
         </div>
       </ul>
     </aside>

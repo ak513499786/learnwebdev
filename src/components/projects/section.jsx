@@ -19,7 +19,10 @@ function Blogs() {
           : " bg-[#121212] text-[#e0e0e0]"
       } px-[80px] max-md:px-[40px] max-sm:px-[20px] py-[51px]`}
     >
-      <div className="flex max-lg:flex-wrap gap-[32px]">
+      <h1 className="text-[64px] max-md:text-[56px] max-sm:text-[44px] max-[500px]:text-[36px] capitalize leading-[120%] font-semibold">
+        My Projects
+      </h1>
+      <div className="flex mt-[52px] max-lg:flex-wrap gap-[32px]">
         <div
           className={`${
             theme === "light"
@@ -28,9 +31,7 @@ function Blogs() {
           } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 max-sm:hover:scale-100 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[15px] py-[12px]`}
         >
           <img src={codelinear2} className="rounded-[5px] w-full" alt="" />
-          <h1
-            className="text-[20px] font-semibold mt-[12px] leading-[130%]"
-          >
+          <h1 className="text-[20px] font-semibold mt-[12px] leading-[130%]">
             Codelinear's First Version
           </h1>
           <p className="text-base mt-[12px] mb-[8px]">Tech Stack and Skills:</p>
@@ -71,9 +72,7 @@ function Blogs() {
           } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 max-sm:hover:scale-100 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[15px] py-[12px]`}
         >
           <img src={codelinear} className="rounded-[5px]" alt="" />
-          <h1
-            className="text-[20px] font-semibold mt-[12px] leading-[130%]"
-          >
+          <h1 className="text-[20px] font-semibold mt-[12px] leading-[130%]">
             Redefining Codelinear
           </h1>
           <p className="text-base mt-[12px] mb-[8px]">Tech Stack and Skills:</p>
@@ -120,9 +119,7 @@ function Blogs() {
           } w-[400px] max-[670px]:w-full max-lg:w-[45%] max-lg:h-auto max-lg:pb-[50px] hover:scale-105 max-sm:hover:scale-100 transition-all duration-300 relative pb-[40px] rounded-[7px] px-[15px] py-[12px]`}
         >
           <img src={parallel} className="rounded-[5px] w-full" alt="" />
-          <h1
-            className="text-[20px] font-semibold mt-[12px] leading-[130%]"
-          >
+          <h1 className="text-[20px] font-semibold mt-[12px] leading-[130%]">
             ParallelEdU: The Future of Online Learning
           </h1>
           <p className="text-base mt-[12px] mb-[8px]">Tech Stack and Skills:</p>
