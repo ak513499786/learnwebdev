@@ -51,7 +51,7 @@ function About() {
           <a
             target="_blank"
             className="max-sm:w-full"
-            href="https://drive.google.com/file/d/1IpelorQYhuFYQ6jjBHnlzt7lKooGIeaT/view?usp=drive_link"
+            href="https://drive.google.com/file/d/19xTWiaRnVVJxZ8u006FUc-Mt2XDNthS7/view?usp=sharing"
           >
             {" "}
             <button
