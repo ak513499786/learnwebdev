@@ -52,7 +52,7 @@ function Footer() {
               href="mailto:ahmedkhan.cse010@gmail.com"
               className="hover:underline translate-all"
             >
-              Mail
+              Email
             </a>
           </li>
           <li>

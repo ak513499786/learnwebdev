@@ -28,7 +28,7 @@ function Navbar() {
           theme === "light"
             ? "text-[#000000] bg-[#ffffff] shadow-[0px_0px_20px_#00000033]"
             : "text-[#e0e0e0] bg-[#121212] shadow-[0px_0px_20px_#444444]"
-        } w-[1024px] max-xl:w-[90%] rounded-[50px] max-sm:px-[25px] fixed top-[20px] justify-between items-center px-[40px] pt-[10px] pb-[10px]`}
+        } w-[1024px] max-xl:w-[90%] rounded-[15px] max-sm:px-[25px] fixed top-[20px] justify-between items-center px-[30px] pt-[10px] pb-[10px]`}
       >
         <Link onClick={handleClick} to={"/"}>
           <img src={Logo} className="max-[400px]:w-[35px]" alt="" />
