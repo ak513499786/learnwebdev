@@ -51,7 +51,7 @@ function About() {
           <a
             target="_blank"
             className="max-sm:w-full"
-            href="https://drive.google.com/file/d/19xTWiaRnVVJxZ8u006FUc-Mt2XDNthS7/view?usp=sharing"
+            href="https://drive.google.com/file/d/1kQ_vPclkdcffm8fiIPpCAPz3qEKWnL2S/view"
           >
             {" "}
             <button
@@ -80,7 +80,7 @@ function About() {
             Hi! I'm Ahmed
           </span>{" "}
           <br />
-          I’m currently a MERN Stack Developer at{" "}
+          I’m a MERN Stack Developer, worked at
           <span
             className={`${
               theme === "light" ? "text-[#32cd32]" : "text-[#2e8b5f]"

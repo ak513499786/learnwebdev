@@ -161,7 +161,7 @@ function Navbar() {
               <li>
                 <a
                   target="_blank"
-                  href="https://drive.google.com/file/d/19xTWiaRnVVJxZ8u006FUc-Mt2XDNthS7/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1kQ_vPclkdcffm8fiIPpCAPz3qEKWnL2S/view"
                 >
                   {" "}
                   <img
