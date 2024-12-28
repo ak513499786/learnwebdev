@@ -87,7 +87,7 @@ function About() {
             } font-bold`}
           >
             {" "}
-            <a href="https://www.codelinear.com">Codelinear</a>
+            <a target="_blank" href="https://codelinear.com">Codelinear</a>
           </span>
           , where I specialize in building responsive, scalable web applications
           using{" "}
