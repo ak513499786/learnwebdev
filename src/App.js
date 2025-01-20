@@ -48,7 +48,7 @@ function App() {
               </>
             }
           />
-          <Route
+          {/* <Route
             exact
             path={"/blogs"}
             element={
@@ -74,7 +74,7 @@ function App() {
                 <HTMLTags />
               </>
             }
-          />
+          /> */}
           <Route
             exact
             path={"/projects"}
