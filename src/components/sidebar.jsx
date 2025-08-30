@@ -56,7 +56,7 @@ function Sidebar() {
             <abbr title="Resume">
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1kQ_vPclkdcffm8fiIPpCAPz3qEKWnL2S/view"
+                href="https://drive.google.com/file/d/1D2WbxbixC_dWItplRZOW6pdC_G1Jma8d/view?usp=sharing"
               >
                 <img
                   src={Resume}

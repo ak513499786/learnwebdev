@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import ThemeContext from "../context/themeContext";
+import { Link } from "react-router-dom";
 function Footer() {
   const { theme } = useContext(ThemeContext);
   const handleClick = () => {
